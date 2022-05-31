@@ -8,7 +8,7 @@
       >
         <h2>
           <span>你好, 我是张启震</span>,
-          一个互联网产品经理, 哲学爱好者, 天主教徒.
+          一个{{myData.info.discribes.less}}
         </h2>
       </div>
       <div 
@@ -22,10 +22,12 @@
         :class="{show: myData.isShow >= 3}"
       >
         <div class="describe">
-          <p> 欢迎来的我的主页. 我是张启震, 一个互联网产品经理, 哲学爱好者, 天主教徒. </p>
-          <p> 我 1985 年出生在甘肃天水, 2005 年就读于西北师大知行学院, 学习法学专业. </p>
-          <p> 2009 年毕业后, 从事过书店店员, 房产经纪人, 艺术品经纪人, 富媒体策划. </p>
-          <p> 2015 年定居无锡后一直从事互联网产品经理. </p>
+          <p
+            v-for="(d, i) in myData.info.discribes.more"
+            :key="i"
+          >
+            {{d}}
+          </p>
         </div>
         <div class="work">
           <h3>工作经历</h3>
@@ -140,6 +142,7 @@ import Navbar from './Navbar.vue'
 
 const myData = reactive({
   info: {},
+  discribes: {},
   contact: [],
   resume: [],
   skill: [],
@@ -149,6 +152,7 @@ const myData = reactive({
 
 const store = useStore()
 myData.info = store.state.aboutMe.info
+myData.discribes = store.state.aboutMe.discribes
 myData.contact = store.state.aboutMe.contact
 myData.resume = store.state.aboutMe.resume
 myData.skill = store.state.aboutMe.skill
@@ -200,7 +204,9 @@ h3 {
     }
     .header {
       padding: 4vh 0;
+      padding-right: 2vw;
       font-size: 30px;
+      line-height: 1.5;
       font-family: myFontLight;
       opacity: 0;
       transition: opacity .8s ease-in-out;

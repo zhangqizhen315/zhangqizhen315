@@ -19,8 +19,8 @@
         <ul class="nav">
           <li><router-link to="/normal/aboutMe">关于我</router-link></li>
           <li><router-link to="/normal/work">作品集</router-link></li>
-          <li><router-link to="">博客</router-link></li>
-          <li><router-link to="">项目</router-link></li>
+          <li><a href="https://zhangqizhen.cn/blog">博客</a></li>
+          <li><a href="https://github.com/zhangqizhen315">项目</a></li>
         </ul>
       </div>
       <div class="footer" :class="{showMore : myData.showMore}">

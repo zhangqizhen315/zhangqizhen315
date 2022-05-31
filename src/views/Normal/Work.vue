@@ -7,15 +7,15 @@
       </div>
       <div class="projects" :class="{show : myData.isShow >=2 }">
         <div 
-          class=project
+          class="project"
           v-for="(p, i) in myData.projects"
           :key="i"
         >
-          <div class="banner">
-            <img :src="p.img" alt="">
-          </div>
           <div class="title">
             {{p.title}}
+          </div>
+          <div class="banner">
+            <img :src="p.img" alt="">
           </div>
           <div class="describe">
             {{p.description}}
@@ -105,6 +105,7 @@ setTimeout(function () {
           }
           @media (max-width: 780px){
             width: 90vw;
+            margin: 30px 0;
           }
         }
         width: 30vw;
@@ -116,6 +117,7 @@ setTimeout(function () {
             }
             @media (max-width: 780px) {
               width: 90vw;
+              border-radius: 0px
             }
             width: 30vw;
             border-radius: 30px
@@ -123,6 +125,12 @@ setTimeout(function () {
         }
         .title {
           position: absolute;
+          @media screen {
+            @media (max-width: 780px){
+              position: static;
+              border-radius: 30px 30px 0 0;
+            }
+          }
           top: 0;
           line-height: 60px;
           text-align: center;
@@ -135,6 +143,11 @@ setTimeout(function () {
         }
         .describe {
           position: absolute;
+          @media screen {
+            @media (max-width: 780px) {
+              position: static;
+            }
+          }
           bottom: 0px;
           width: 100%;
           background-color: rgba(131, 136, 124, .8);

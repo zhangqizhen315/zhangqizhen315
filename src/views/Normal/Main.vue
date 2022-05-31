@@ -17,15 +17,15 @@
       </div>
       <div class="write" :class="{isShow: myData.showId >= 3}">
         我写过点
-        <router-link to=''>
+        <a href="https://zhangqizhen.cn/blog">
           小文章
-        </router-link>
+        </a>
       </div>
       <div class="project" :class="{isShow: myData.showId >= 4}">
         也做点自己的
-        <router-link to=''>
+        <a href="https://github.com/zhangqizhen315">
           小项目
-        </router-link>
+        </a>
       </div>
     </div>
   </div>
@@ -72,15 +72,24 @@ setTimeout(function () {
   display: flex;
   align-items: center;
   justify-content: end;
-
+  @media screen {
+    @media (max-width: 780px){
+      justify-content: center;
+    }
+  }
   .wrapper {
     width: 70vw;
     font-size: 4vw;
+    @media screen {
+      @media (max-width: 780px){
+        font-size: 20px;
+        padding: 2%
+      }
+    }
     padding: 5%;
     display: flex;
     flex-direction: column;
     font-family: myFontLight;
-
     div {
       padding-top: 24px;
       opacity: 0;
