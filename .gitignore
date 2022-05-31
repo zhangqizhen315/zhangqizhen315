@@ -21,3 +21,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# 主页 git 备份
+/zhangqizhen315.github.io/
