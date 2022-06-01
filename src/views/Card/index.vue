@@ -3,8 +3,6 @@
 </template>
 
 <script setup>
-import Main from './Main.vue'
-import Navbar from './Navbar.vue'
 // 以上引入模块
 
 
@@ -19,23 +17,3 @@ import Navbar from './Navbar.vue'
 <style scoped lang="less">
 
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

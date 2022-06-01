@@ -15,7 +15,7 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'home',
+        //name: 'home',
         component: () => import('../views/Normal/Home.vue')
       },
       {
@@ -27,6 +27,18 @@ const routes = [
         path: 'work',
         // name: 'work',
         component: () => import('../views/Normal/Work.vue')
+      }
+    ]
+  },
+  {
+    path: '/card',
+    name: 'card',
+    component: () => import('../views/Card/index.vue'),
+    children: [
+      {
+        path: '',
+        //name: 'home',
+        component: () => import('../views/Card/Home.vue')
       }
     ]
   }

@@ -39,6 +39,12 @@ export default {
         ]
       }
     },
+    links: {
+      aboutMe: '/normal/aboutMe',
+      work: '/normal/work',
+      write: 'https://zhangqizhen.cn/blog',
+      project: 'https://github.com/zhangqizhen315'
+    },
     contact: [
       { title: '电话', value: '13585090883' },
       { title: '邮件', value: 'zhangqizhen315@gmail.com'},
