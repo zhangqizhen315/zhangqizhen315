@@ -141,6 +141,15 @@
           </div>
         </div>
       </div>
+      <div class="footer">
+        <div class="wrapper">
+          {{myData.footer.p1}} {{myData.footer.p2}} <a :href="myData.footer.csszen.r" target="_blank">{{myData.footer.csszen.t}}</a>. {{myData.footer.p3}}
+          <div class="btns">
+            <button @click="goProject">更多样式</button>
+            <button @click="goGithub">github</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -148,6 +157,7 @@
 <script setup>
 import {reactive} from 'vue'
 import {useStore} from 'vuex'
+import {useRouter} from 'vue-router'
 // 以上引入模块
 
 
@@ -159,6 +169,7 @@ const myData = reactive({
   knowledges: {},
   contacts: {},
   links: {},
+  footer: {}
   
 })
 const store = useStore()
@@ -169,9 +180,16 @@ myData.skills = store.state.aboutMe.skill
 myData.knowledges = store.state.aboutMe.knowledge
 myData.contacts = store.state.aboutMe.contact
 myData.links = store.state.aboutMe.links
+myData.footer = store.state.project.description
+const router= useRouter()
 // 以上定义数据
 
-
+function goProject(  ) {
+  router.push('/project')
+}
+function goGithub(  ) {
+  window.location.href("https://github.com/zhangqizhen315")
+}
 // 以上定义方法
 
 
@@ -395,6 +413,29 @@ myData.links = store.state.aboutMe.links
           }
         }
       }
+    }
+    .footer {
+      background-color: #000;
+      color: #fff;
+      font-family: myFontLight;
+      line-height:1.5;
+      font-size:18px;
+      .wrapper {
+        width: 90vw;
+        margin: 0 auto;
+        a {
+          font-family: myFontBold;
+          color: #fff;
+          text-decoration: none;
+        
+        }
+        .btns {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        }
+      }
+
     }
   }
 }

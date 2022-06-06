@@ -1,11 +1,11 @@
-import project1 from '@/assets/img/project/01-payment.jpg'
-import project2 from '@/assets/img/project/02-flh.png'
-import project3 from '@/assets/img/project/03-point1.jpg'
-import project4 from '@/assets/img/project/04-card.png'
-import project5 from '@/assets/img/project/05-hushenhecuang.png'
-import project6 from '@/assets/img/project/06-au.png'
-import project7 from '@/assets/img/project/07-caimu.png'
-import project8 from '@/assets/img/project/08-rongZiPingTai.png'
+import project1 from '@/assets/img/work/01-payment.jpg'
+import project2 from '@/assets/img/work/02-flh.png'
+import project3 from '@/assets/img/work/03-point1.jpg'
+import project4 from '@/assets/img/work/04-card.png'
+import project5 from '@/assets/img/work/05-hushenhecuang.png'
+import project6 from '@/assets/img/work/06-au.png'
+import project7 from '@/assets/img/work/07-caimu.png'
+import project8 from '@/assets/img/work/08-rongZiPingTai.png'
 
 export default {
   namespaced: true,

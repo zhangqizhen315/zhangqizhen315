@@ -30,18 +30,18 @@
           </div>
           <div class="describe">
             <p>
-              这既我的个人网站, 也是一个用来练习前端的小项目.
+              {{myData.project.p1}}
             </p>
             <p>
-              这个项目的灵感来源于
-              <a href="http://www.csszengarden.com/tr/zh-cn/" target="_blank">禅意花园</a>.
+              {{myData.project.p2}}
+              <a :href="myData.project.csszen.r" target="_blank">{{myData.project.csszen.t}}</a>.
             </p>
             <p>
-              这个项目中个人信息的内容完全一样, 通过做成不同 vue 组件, 来使其展示成完全不同的主页样式.
+              {{myData.project.p3}}
             </p>
             <div class="btns">
-              <button>查看其它样式</button>
-              <button>github</button>
+              <button @click="goProject">查看其它样式</button>
+              <button @click="goGithub">github</button>
             </div>
           </div>
           <div class="bottom">
@@ -55,18 +55,30 @@
 
 <script setup>
 import {reactive} from 'vue'
+import {useStore} from 'vuex'
+import {useRouter} from 'vue-router'
 // 以上引入模块
 
 
 const myData = reactive({
   isShow: false,
-  showMore: false
+  showMore: false,
+  project: {}
 })
+const store = useStore()
+const router= useRouter()
+myData.project = store.state.project.description
 // 以上定义数据
 
 setTimeout(function() {
   myData.isShow = true
 }, 1800)
+function goProject(  ) {
+  router.push('/project')
+}
+function goGithub(  ) {
+  window.location.href="https://github.com/zhangqizhen315"
+}
 // 以上定义方法
 
 
