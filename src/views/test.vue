@@ -15,7 +15,7 @@ import {reactive} from 'vue'
 
 const myData = reactive({
   name : '张三',
-  
+  age: 18
 })
 console.log(myData);
 
