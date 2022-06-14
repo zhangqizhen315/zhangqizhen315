@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="header">
         <div class="logo">
-          <img src="../assets/me.jpg" alt=""/>
+          <img :src="store.state.avatar" alt=""/>
         </div>
         <div class="description">
           这是一个用于学习 vue 的小项目. 项目的灵感来源于 <a href="http://www.csszengarden.com/tr/zh-cn/" target="_blank">css禅意花园</a>. 这个项目是通过不同的 vue 组件, 将同一套个人信息展示为不同样式. 以此来练习前端技术. 如果对该项目有更多的兴趣, 可以 <a href="https://github.com/zhangqizhen315/zhangqizhen315" target="_blank">访问该项目的 github </a> .

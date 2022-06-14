@@ -15,7 +15,7 @@
         class="banner"
         :class="{show: myData.isShow >= 2}"
       >
-        <img src="../../assets/img/aboutMe/mmexport1653626754126.jpg" alt="">
+        <img :src="store.state.myHome1" alt="">
       </div>
       <div 
         class="main"

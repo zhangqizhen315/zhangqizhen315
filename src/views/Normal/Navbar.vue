@@ -4,7 +4,7 @@
       <div class="top">
         <div class="logo">
           <router-link to="/normal">
-            <img src="../../assets/me.jpg" alt="">
+            <img :src="store.state.avatar" alt="">
           </router-link>
         </div>
         <div class="navbtn">
@@ -26,7 +26,7 @@
       <div class="footer" :class="{showMore : myData.showMore}">
         <div class="project">
           <div class="logo">
-            <img src="../../assets/eye.png" alt="">
+            <img :src="store.state.eye" alt="">
           </div>
           <div class="describe">
             <p>

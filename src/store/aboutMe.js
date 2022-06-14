@@ -1,11 +1,3 @@
-import project1 from '@/assets/img/work/01-payment.jpg'
-import project2 from '@/assets/img/work/02-flh.png'
-import project3 from '@/assets/img/work/03-point1.jpg'
-import project4 from '@/assets/img/work/04-card.png'
-import project5 from '@/assets/img/work/05-hushenhecuang.png'
-import project6 from '@/assets/img/work/06-au.png'
-import project7 from '@/assets/img/work/07-caimu.png'
-import project8 from '@/assets/img/work/08-rongZiPingTai.png'
 
 export default {
   namespaced: true,
@@ -101,42 +93,42 @@ export default {
       {
         title: '海航采购钱包',
         description: '在海航 SRM 系统 (采购寻源系统) 基础上, 基于区块链实现支付功能. 实现的功能主要包括: 基础支付功能 (充值/提现/转账/支付), 基于支付功能采购风险控制功能 (扣款/冻结/解除/还源), 其他支撑性功能 (权限/职责/审批) 等.',
-        img: project1
+        img: 'https://s2.loli.net/2022/06/14/49rZ7aASjGk6INP.jpg'
       },
       {
         title: '海航福利汇系统',
         description: '为海航 20 万员工提供弹性福利系统.',
-        img: project2
+        img: 'https://s2.loli.net/2022/06/14/iBShVuYDy8OHmcJ.png'
       },
       {
         title: '海航微积分项目',
         description: '基于区块链技术, 实现积分跨系统交换/支付功能.',
-        img: project3
+        img: 'https://s2.loli.net/2022/06/14/5LJhFcUEYbqdpan.jpg'
       },
       {
         title: '积分卡券项目',
         description: '参考国处成功的积分运营模式 (drop/points), 结合区块链, 提供高效忠诚度计划与用户引流.',
-        img: project4
+        img: 'https://s2.loli.net/2022/06/14/7pT4DVCEBiZlFda.png'
       },
       {
         title: '海航供应链金融项目',
         description: '基于海航采购钱包项目实现的货款控制功能, 为上下游企业提供供应链金融风险控制.',
-        img: project8
+        img: 'https://s2.loli.net/2022/06/14/N5Lh6aXbPrjJYTp.png'
       },
       {
         title: '沪深供应链金融项目',
         description: '基于沪深控股集团的线下供应链体系, 实现线上的供应链金融业务. 系统主要业务为: 基础供应及采购业务, 应收账款融资业务.',
-        img: project5
+        img: 'https://s2.loli.net/2022/06/14/qPe2JxhuTrMAkLb.png'
       },
       {
         title: '集成电路设计服务平台',
         description: '为集成电路设计企业提供私有云 IT 资源集成管理服务, 通过对私有云子系统的组件化, 配置化集成, 实现 IT 资源的持续集成和管理能力的持续改进.',
-        img: project6
+        img: 'https://s2.loli.net/2022/06/14/Wuc5Ny8gUdXMBFR.png'
       },
       {
         title: '采木资讯供求撮合系统',
         description: '基于木材行业资讯平台提供木材供求撮合业务.',
-        img: project7
+        img: 'https://s2.loli.net/2022/06/14/Orw9aCW4k7MEAV3.png'
       }
     ]
   },

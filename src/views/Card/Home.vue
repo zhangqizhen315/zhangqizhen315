@@ -4,7 +4,7 @@
       <div class="hello outside">
         <div class="wrapper">
           <div class="logo">
-            <img src="../../assets/me.jpg" alt="">
+            <img :src="store.state.avatar" alt="">
           </div>
           <p>
             你好, 我是<span class="name">{{myData.info.name}}</span>. 一个{{myData.info.discribes.less}}
@@ -188,7 +188,7 @@ function goProject(  ) {
   router.push('/project')
 }
 function goGithub(  ) {
-  window.location.href("https://github.com/zhangqizhen315")
+  window.location.href="https://github.com/zhangqizhen315"
 }
 // 以上定义方法
 

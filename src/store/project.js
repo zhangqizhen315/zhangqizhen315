@@ -1,5 +1,3 @@
-import normalImg from '@/assets/img/project/normal.png'
-import cardImg from '@/assets/img/project/card.png'
 
 export default {
   namespaced: true,
@@ -8,13 +6,13 @@ export default {
     projects: [
       {
         title: 'normal',
-        imgUrl: normalImg,
+        imgUrl: 'https://s2.loli.net/2022/06/14/aGy9bqzw3sxoIDE.png',
         description: '基本的个人主页样式, 一种尽可能简单的样式',
         router: '/normal'
       },
       {
         title: 'card',
-        imgUrl: cardImg,
+        imgUrl: 'https://s2.loli.net/2022/06/14/axegPbdvJsumzXl.png',
         description: '卡片式的个人主页样式, 所有信息, 以简单卡片来展示',
         router: '/card'
       }
