@@ -1,24 +1,39 @@
-# zhangqizhen
+# 一个《个人主页》项目
 
-## Project setup
+## 项目说明
+
+我是一个产品经理. 还是半路出家的. ( 我的意思是, 我是一个几乎没有什么技术背景的人 ). 由于对高保真原型的执着, 我自学了前端.
+
+自学 vue 时, 跟前很多教程做了大型电商的临摩. 感觉并不是很好, 因为项目比较大, 正反馈来得慢. 这使得学习的动力快速下降.
+
+于是怀念起学原生 css 时, 玩 [css 禅意花园](http://www.csszengarden.com/tr/zh-cn/) 时的乐趣. `css 禅意花园` 是一个学习 css 的开源项目, 它提供了一套 html 框架, 学习者可以通过为其引入不同的 css 样式使其呈现不同的表现.
+
+正值我自学 vue 有点感觉, 可以简单写点小项目了. 于是给自己写了个个人主页. 在写主页前, 看了不少前端大佬的个人主页. 便想着, 可以在一套个人信息的基础上, 用 vue 的组件化能力, 做出各种各样的个人主页来, 以此来进行练习.
+
+进一步又想, 那为什么不把这个想法做成一个类似 `css 禅意花园` 小项目来帮助大家学习 vue 呢. 
+
+于是便有了这样一个小项目.
+
+## 如何玩这个小项目
+
+如果你也想一起来玩这个小项目, 那么第一步需要把它 clone 到本地.
+
 ```
-npm install
+git@github.com:zhangqizhen315/zhangqizhen315.git
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+进入项目目录, 找到 `/src/store/aboutMe.js` 文件. 这个文件里, 记录的是个人信息. 当然, 目前项目里的个人信息是我自己的, 你需要把它替换成你的.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+`/src/store/project.js` 文件里, 是我参于的项目信息, 你也需要改成你自己的.
 
-### Lints and fixes files
-```
-npm run lint
-```
+而后, 你就可以在 `/src/views/` 目录, 或 `/src/components/` 下添加自己的组件, 并制作自己的个人主页了.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 其它
+
+我会在 bilibili 上做几个关于这个项目的介绍视频. 如果感兴趣, 可以去看看.
+
+最后要说一句. 这个项目毕竟是一个初学者写的, 里边一定有很多非常粗糙的写法, 如果你是一个大佬, 还请多多见谅.
+
+
+
+
