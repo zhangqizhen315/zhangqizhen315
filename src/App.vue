@@ -12,15 +12,9 @@ import Normal from './views/Normal/index.vue'
 </script>
 
 <style scoped lang="less">
-@font-face {
-  font-family: myFontLight;
-  src: url(./assets/font/SourceHanSansCN-Light.otf);
-}
-@font-face {
-  font-family: myFontBold;
-  src: url(./assets/font/SourceHanSansCN-Bold.otf);
-}
 </style>
+
+
 
 
 

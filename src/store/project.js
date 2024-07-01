@@ -28,7 +28,7 @@ export default {
     }
   },
   actions: {
-    // 放提交动作, 两个参数 context, value. context 是上下方, 其中包含 commit
+    // 放提交动作, 两个参数 context, value. context 是上下文, 其中包含 commit
   },
   mutations: {
     // 修改数据, 两个参数 state, value. state 是本模块的数据

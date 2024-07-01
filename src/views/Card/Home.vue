@@ -216,7 +216,6 @@ function goGithub(  ) {
         background-color: #fff;
         margin: 0 125px;
         position: relative;
-        font-family: myFontLight;
         padding: 40px;
         font-size: 24px;
         line-height: 1.5;
@@ -277,17 +276,12 @@ function goGithub(  ) {
             display: flex;
             flex-direction: column;
             span:first-of-type{
-              font-family: myFontBold;
               font-size:18px
             }
           }
         }
-        .name {
-          font-family: myFontBold;
-        }
         h3 {
           padding-left: 25px;
-          font-family: myFontBold;
           font-size: 50px;
         }
       }
@@ -417,14 +411,12 @@ function goGithub(  ) {
     .footer {
       background-color: #000;
       color: #fff;
-      font-family: myFontLight;
       line-height:1.5;
       font-size:18px;
       .wrapper {
         width: 90vw;
         margin: 0 auto;
         a {
-          font-family: myFontBold;
           color: #fff;
           text-decoration: none;
         

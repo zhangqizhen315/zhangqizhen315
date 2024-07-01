@@ -112,12 +112,10 @@ function goGithub(  ) {
   }
   .describe {
     color: #83887c;
-    font-family: myFontLight;
     text-align: center;
     line-height: 1.5;
   }
   a {
-    font-family: myFontBold;
     color: #000;
     text-decoration: none;
     &:hover {

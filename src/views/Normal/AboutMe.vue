@@ -182,7 +182,6 @@ setTimeout(function () {
 h3 {
   font-size: 24px;
   padding-top: 24px;
-  font-family: myFontBold;
 }
 .aboutMe {
   background-color: @bgcPrim;
@@ -207,14 +206,10 @@ h3 {
       padding-right: 2vw;
       font-size: 30px;
       line-height: 1.5;
-      font-family: myFontLight;
       opacity: 0;
       transition: opacity .8s ease-in-out;
       &.show{
         opacity: 1;
-      }
-      span {
-        font-family: myFontBold;
       }
     }
     .banner {
@@ -267,7 +262,6 @@ h3 {
       .describe {
         font-size: 18px;
         line-height: 1.5;
-        font-family: myFontLight;
         padding: 5px 0;
       }
       .work {
@@ -277,11 +271,9 @@ h3 {
             display: flex;
             flex-direction: column;
             font-size: 18px;
-            font-family: myFontLight;
             line-height: 1.2;
             span {
               &:first-of-type{
-                font-family: myFontBold;
                 padding-top: 8px;
                 background-color: @textPrim;
                 color: @bgcPrim;
@@ -314,7 +306,6 @@ h3 {
               background-color: @textPrim;
               color: @bgcPrim;
               border-radius: 8px;
-              font-family: myFontBold;
             }
 
             ul {
@@ -323,7 +314,6 @@ h3 {
               justify-content: space-between;
               align-items: center;
               li {
-                font-family: myFontBold;
                 font-size: 16px;
                 line-height: 1.5;
                 padding: 8px 8px;
@@ -344,7 +334,6 @@ h3 {
           display: flex;
           flex-wrap: wrap;
           li {
-            font-family: myFontBold;
             font-size: 16px;
             line-height: 1.5;
             padding: 8px 8px;
@@ -381,9 +370,7 @@ h3 {
           border-bottom: 1px solid @textPrim;
           span {
             padding: 4px;
-            font-family: myFontLight;
             &:first-of-type {
-              font-family: myFontBold;
               width: 100px;
             }
           }
@@ -400,9 +387,7 @@ h3 {
           border-bottom: 1px solid @textPrim;
           span {
             padding: 4px;
-            font-family: myFontLight;
             &:first-of-type {
-              font-family: myFontBold;
               width: 100px;
             }
           }
@@ -412,7 +397,6 @@ h3 {
   }
 }
 </style>
-
 
 
 

@@ -89,7 +89,6 @@ setTimeout(function () {
     padding: 5%;
     display: flex;
     flex-direction: column;
-    font-family: myFontLight;
     div {
       padding-top: 24px;
       opacity: 0;
@@ -97,7 +96,6 @@ setTimeout(function () {
       &.isShow { opacity: 1;
       }
       a {
-        font-family: myFontBold;
         color: #83837c;
         &:hover {
           color: #08a8e6;

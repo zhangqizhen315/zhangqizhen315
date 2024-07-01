@@ -78,7 +78,6 @@ setTimeout(function () {
     .header {
       font-size: 30px;
       height: 5vh;
-      font-family: myFontBold;
       margin: 20px 0;
       border-bottom: 1px solid @textPrim;
       text-align: center;
@@ -138,7 +137,6 @@ setTimeout(function () {
           width: 100%;
           border-radius: 30px;
           color: @bgcPrim;
-          font-family: myFontBold;
           font-size: 24px;
         }
         .describe {
@@ -156,7 +154,6 @@ setTimeout(function () {
           color: @bgcPrim;
           line-height: 1.5;
           font-size: 18px;
-          font-family: myFontBold;
         }
 
       }

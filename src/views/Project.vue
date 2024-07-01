@@ -89,7 +89,6 @@ console.log(store.state.project.projects);
         }
       }
       .description {
-        font-family: myFontLight;
         line-height: 30px;
       }
     }
@@ -101,7 +100,6 @@ console.log(store.state.project.projects);
         grid-gap: 5vw;
         .project {
           .title {
-            font-family: myFontBold;
             font-size: 30px;
             text-align: center;
             line-height: 50px
@@ -112,7 +110,6 @@ console.log(store.state.project.projects);
             }
           }
           .description {
-            font-family:myFontLight;
             font-size: 18px;
             line-height: 1.5;
           }
