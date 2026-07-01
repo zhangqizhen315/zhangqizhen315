@@ -75,6 +75,19 @@
             </li>
           </ul>
         </div>
+        <div class="certificates">
+          <h3>AI 证书</h3>
+          <div class="cert-list">
+            <div
+              class="cert-card"
+              v-for="(c, i) in myData.certificates"
+              :key="i"
+            >
+              <iframe :src="'/' + c.file" frameborder="0"></iframe>
+              <a :href="'/' + c.file" target="_blank">{{ c.title }}（{{ c.titleZh }}）</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div 
         class="aside"
@@ -147,6 +160,7 @@ const myData = reactive({
   resume: [],
   skill: [],
   knowledge: [],
+  certificates: [],
   isShow: 0
 })
 
@@ -157,6 +171,7 @@ myData.contact = store.state.aboutMe.contact
 myData.resume = store.state.aboutMe.resume
 myData.skill = store.state.aboutMe.skill
 myData.knowledge = store.state.aboutMe.knowledge
+myData.certificates = store.state.aboutMe.certificates
 // 以上定义数据
 
 setTimeout(function () {
@@ -341,6 +356,39 @@ h3 {
             background-color: @textHover;
             color: #fff;
             margin:5px 5px;
+          }
+        }
+      }
+      .certificates {
+        .cert-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+          margin-top: 16px;
+        }
+        .cert-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: calc(50% - 8px);
+          @media screen and (max-width: 780px) {
+            width: 100%;
+          }
+          iframe {
+            width: 100%;
+            height: 220px;
+            border-radius: 8px;
+            border: 1px solid @textPrim;
+          }
+          a {
+            margin-top: 6px;
+            font-size: 14px;
+            color: @textHover;
+            text-align: center;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }

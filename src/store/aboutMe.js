@@ -57,6 +57,13 @@ export default {
       '面向对象设计(OOAD & UML)',
       '敏捷方法'
     ],
+    certificates: [
+      { title: 'Claude Code in Action', titleZh: 'Claude Code 实战', file: 'certificate-2veuxie3qtcb-1775910518.pdf' },
+      { title: 'Claude Code 101', titleZh: 'Claude Code 入门', file: 'certificate-c8hr2r9g7g2n-1775915351.pdf' },
+      { title: 'Introduction to agent skills', titleZh: 'Agent 技能入门', file: 'certificate-s7bc5fxqf4rq-1775958582.pdf' },
+      { title: 'Introduction to subagents', titleZh: '子代理入门', file: 'certificate-9uhfgtxypyt8-1775961558.pdf' },
+      { title: 'AI Fluency: Framework & Foundations', titleZh: 'AI 素养：框架与基础', file: 'certificate-e2fwxo983tnc-1775962633.pdf' }
+    ],
     resume: [
       {
         time: '2021.09 - 至今',
