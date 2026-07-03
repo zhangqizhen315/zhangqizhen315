@@ -35,7 +35,7 @@ export default {
       aboutMe: '/normal/aboutMe',
       work: '/normal/work',
       write: 'https://zhangqizhen.cn/blog',
-      project: 'https://github.com/zhangqizhen315'
+      project: 'https://zhangqizhen.cn/portfolio/'
     },
     contact: [
       { title: '电话', value: '13585090883' },
