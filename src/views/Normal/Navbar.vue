@@ -18,7 +18,7 @@
         </div>
         <ul class="nav">
           <li><router-link to="/normal/aboutMe">关于我</router-link></li>
-          <li><router-link to="/normal/work">作品集</router-link></li>
+          <li><a :href="store.state.aboutMe.links.project" target="_blank">作品集</a></li>
           <li><a href="https://zhangqizhen.cn/blog">博客</a></li>
           <li><a href="https://github.com/zhangqizhen315">项目</a></li>
         </ul>
@@ -74,7 +74,7 @@ setTimeout(function() {
   myData.isShow = true
 }, 1800)
 function goProject(  ) {
-  router.push('/project')
+  window.open(store.state.aboutMe.links.project, '_blank')
 }
 function goGithub(  ) {
   window.location.href="https://github.com/zhangqizhen315"
