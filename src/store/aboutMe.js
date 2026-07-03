@@ -105,17 +105,17 @@ export default {
       {
         title: '交通银行智采商城',
         description: '企业采购电商平台, 覆盖电商采购、框架协议采购、商旅服务等业务板块. 参与需求分析、产品方案设计、流程梳理与迭代推进, 支撑采购全流程线上化和合规治理.',
-        img: require('../assets/img/card/bg_01.png')
+        img: '/智采商城.png'
       },
       {
         title: '浙江能源网上商城预存款功能',
         description: '围绕商城预存款结算场景设计协议管理、调账审批、对账、查询、充值、冻结、核销及订单模块改造, 完成业务流程、角色权限、数据要素和页面规则设计.',
-        img: require('../assets/img/card/bg_02.png')
+        img: '/浙能云采.png'
       },
       {
         title: '北京大兴国际机场兴采e购商城',
         description: '物料采购商城项目, 支撑统一平台铺货、在线比价、验收售后、对账结算和固定价商品专区等能力, 推动框架采购电商化、标准化和采购成本管控.',
-        img: require('../assets/img/card/bg_03.png')
+        img: '/兴采e购.png'
       },
       {
         title: '海航采购钱包',
